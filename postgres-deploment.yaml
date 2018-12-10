@@ -12,6 +12,10 @@ spec:
       labels:
         component: postgres
     spec:
+      volumes:
+        - name: postgres
+          persistentVolumeClaim:
+            claimName: database-per
       containers:
       - name: postgres
         image: postgres
