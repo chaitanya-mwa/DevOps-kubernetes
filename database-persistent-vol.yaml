@@ -3,9 +3,11 @@ kind: PersistentVolumeClaim
 metadata:
   name: database-per
 spec:
-  accessmode:
+  accessModes:
   - ReadWriteOnce
   resources:
     requests:
+      storage: 2Gi
+       
       
       
